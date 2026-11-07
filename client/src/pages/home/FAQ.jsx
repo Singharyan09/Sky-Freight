@@ -82,22 +82,6 @@ export const FAQ = () => {
             </div>
           ))}
         </div>
-
-        {/* Global CTA */}
-        <div className="mt-12 text-center">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            Still have questions?
-          </h3>
-          <p className="text-gray-600 mb-6">
-            Feel free to reach out to us for more details about our cargo
-            solutions.
-          </p>
-          <a
-            href="/contact"
-            className="inline-block bg-primary text-white py-3 px-6 rounded hover:bg-yellow-500 transition-all duration-200">
-            Contact Us
-          </a>
-        </div>
       </div>
     </section>
   );

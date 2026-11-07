@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { GiAirplaneDeparture } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -17,34 +18,34 @@ export const Footer = () => {
             </div>
             <ul className="flex flex-wrap gap-4">
               <li>
-                <a href="#" className="hover:text-primary">
+                <Link to="/" className="hover:text-primary">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="hover:text-primary">
+                <Link to="/about" className="hover:text-primary">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#track" className="hover:text-primary">
+                <Link to="/track" className="hover:text-primary">
                   Tracking
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="hover:text-primary">
+                <Link to="/services" className="hover:text-primary">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#faq" className="hover:text-primary">
+                <Link to="/#faq" className="hover:text-primary">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-primary">
+                <Link to="/contact" className="hover:text-primary">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,24 +1,28 @@
 import heroVid from "/heroVideo.mp4";
+import { RequestQuote } from "./RequestQuote.jsx";
 
 export const Hero = () => {
   return (
-    <section className="bg-gray-50">
-      <div className="pb-16">
-        <video
-          width="100%"
-          autoPlay
-          muted
-          loop
-          className=" relative w-full object-cover h-[calc(100vh-20px)] object-bottom">
-          <source src={heroVid} type="video/mp4" />
-          Sorry, your browser doesn&apos;t support embedded videos.
-        </video>
-        {/* vid content text */}
-        <div className="absolute text-white transform translate-y-1/2 md:top-1/3 top-1/4 sm:translate-x-24 md:right-1/2 md:pr-24  md:pl-10 pl-0  sm:right-1/3 translate-x-1/2 right-1/2 bg-blend-overlay">
-          <h2 className="sm:text-6xl text-5xl font-semibold mb-10">
-            Your Cargo, Our Commitment
-          </h2>
-          <button className="btn">Request a Quote</button>
+    <section className="relative bg-gray-50 overflow-hidden">
+      <video
+        muted
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover object-bottom">
+        <source src={heroVid} type="video/mp4" />
+        Sorry, your browser doesn&apos;t support embedded videos.
+      </video>
+      <div className="absolute inset-0 bg-black/20" />
+
+      {/* Content */}
+      <div className="relative max-w-screen-2xl mx-auto px-4 sm:px-8 py-16 flex flex-col-reverse lg:flex-row lg:items-center gap-10 min-h-[calc(100vh-72px)]">
+        {/* Heading */}
+        <h2 className="text-white sm:text-6xl text-4xl font-semibold max-w-xl">
+          Your Cargo, Our Commitment
+        </h2>
+
+        {/* Request a quote */}
+        <div className="w-full lg:w-auto lg:ml-auto">
+          <RequestQuote />
         </div>
       </div>
     </section>
